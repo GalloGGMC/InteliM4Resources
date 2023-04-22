@@ -1,6 +1,6 @@
 void setup() {
   Serial.begin(9600);
-  delay(150);
+  delay(100);
 }
 
 void loop() {
@@ -32,5 +32,5 @@ void loop() {
   } else {
     Serial.println("\nEsse número é azarado\n");
   }
-  delay(100);
+  delay(50);
 }
