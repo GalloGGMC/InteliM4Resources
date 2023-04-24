@@ -25,7 +25,7 @@ void loop() {
   if (figura == "triângulo"){
     area = m1 * m2 / inteiro;
   } else if (figura == "círculo"){
-    
+    area = pi * (m1*m1);
   } else {
     
   }
