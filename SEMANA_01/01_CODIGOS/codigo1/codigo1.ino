@@ -11,24 +11,24 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Serial.println("\nCaluladora de area\nQual a figura?\n(circulo, retangulo, triangulo)");
+  Serial.println("\nCaluladora de área\nQual a figura?\n(círculo, retângulo, triângulo)");
   while(Serial.available() == 0){}
   String figura = Serial.readString();
   Serial.println("Medida 1: (raio ou base)");
   while(Serial.available() == 0){}
   float m1 = Serial.parseFloat();
-  if (figura == "retangulo" || figura == "triangulo"){
+  if (figura == "retângulo" || figura == "triângulo"){
     Serial.println("Medida 2: (altura)");
     while (Serial.available() == 0){}
     m2 = Serial.parseFloat();
   }
-  if (figura == "triangulo"){
+  if (figura == "triângulo"){
     area = m1 * m2 / inteiro;
-  } else if (figura == "circulo"){
+  } else if (figura == "círculo"){
     
   } else {
     
   }
-  Serial.println("A area:");
+  Serial.println("área:");
   Serial.println(area);
 }
